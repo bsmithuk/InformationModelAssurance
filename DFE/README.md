@@ -8,6 +8,8 @@ IDS (Information Delivery Specification) files for automated compliance checking
 
 ## Files
 
+> The IDS files in this repository are generated from code using [Xbim.IDS.Generator](https://github.com/xBimTeam/Xbim.IDS.Generator) for maintainability.
+
 - **Combined** (`ER-DFE-XX-XX-L-X-00X0`) — all checks for a given RIBA stage in a single file
 - **Combined — Core Only** (`ER-DFE-XX-XX-L-X-00X1`) — core checks for a given RIBA stage in a single file
 - **Combined — Nomenclature and Classification Only** (`ER-DFE-XX-XX-L-X-00X2`) — naming conventions and classification checks for a given RIBA stage in a single file
