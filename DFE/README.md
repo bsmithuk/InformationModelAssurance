@@ -23,7 +23,7 @@ IDS (Information Delivery Specification) files for automated compliance checking
 
 | Revision | Status | Date | Amendment |
 |---|---|---|---|
-| P01.01 | S0 | 2026-05-18 | Preparation for publication |
+| Pnn | Sn | 2026-05-18 | Preparation for publication |
 
 
 ---
