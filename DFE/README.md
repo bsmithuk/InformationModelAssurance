@@ -1,4 +1,4 @@
-﻿# Information Model Assurance — IDS Files (DfE)
+﻿# Information Model Assurance (DfE)
 
 IDS (Information Delivery Specification) files for automated compliance checking of IFC models against the Department for Education's information requirements. Files are aligned with the RIBA Plan of Work delivery stages and developed to meet the DfE's Detailed Exchange Information Requirements (DEIR).
 
@@ -12,7 +12,7 @@ IDS (Information Delivery Specification) files for automated compliance checking
 
 - **Information Model Assurance Guide** (`ER-DFE-XX-XX-T-X-0030`) — full guidance on configuring and running checks
 - **Combined** (`ER-DFE-XX-XX-L-X-00X0`) — all checks for a given RIBA stage in a single file
-- **Combined — Core Only** (`ER-DFE-XX-XX-L-X-00X1`) — core checks for a given RIBA stage in a single file
+- **Combined — Core Only** (`ER-DFE-XX-XX-L-X-00X1`) — shall checks for a given RIBA stage in a single file
 - **Combined — Nomenclature and Classification Only** (`ER-DFE-XX-XX-L-X-00X2`) — naming conventions and classification checks for a given RIBA stage in a single file
 - **[TokenReplacer/](TokenReplacer/)** (`TokenReplacer`) — basic html tool for token replacement
 - **[Grouped/](Grouped/)** — one file per entity group (Project, Site, Building, Storey, Space, Zone, Object Type)
