@@ -6,7 +6,7 @@
 		<ids:version>P01</ids:version>
 		<ids:description>Assurance of IFC-SPF deliverables against DfE's S25 Information Requirements</ids:description>
 		<ids:author>DfE.BIM@Education.gov.uk</ids:author>
-		<ids:date>2026-05-20</ids:date>
+		<ids:date>2026-05-21</ids:date>
 		<ids:purpose>Information Model Assurance</ids:purpose>
 		<ids:milestone>RIBA Stage 3 : Spatial Coordination</ids:milestone>
 	</ids:info>
@@ -1821,32 +1821,6 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_11 : Space Shall Have GrossFloorArea Defined" description="Space Shall Have GrossFloorArea Defined" identifier="3_05_11">
-			<ids:applicability minOccurs="1" maxOccurs="unbounded">
-				<ids:entity>
-					<ids:name>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="IFCSPACE" />
-						</xs:restriction>
-					</ids:name>
-				</ids:entity>
-			</ids:applicability>
-			<ids:requirements>
-				<ids:property cardinality="required" dataType="IFCAREAMEASURE">
-					<ids:propertySet>
-						<ids:simpleValue>BaseQuantities</ids:simpleValue>
-					</ids:propertySet>
-					<ids:baseName>
-						<ids:simpleValue>GrossFloorArea</ids:simpleValue>
-					</ids:baseName>
-					<ids:value>
-						<xs:restriction base="xs:double">
-							<xs:minExclusive value="0" />
-						</xs:restriction>
-					</ids:value>
-				</ids:property>
-			</ids:requirements>
-		</ids:specification>
 		<ids:specification ifcVersion="IFC2X3" name="3_05_11_01 : Space Shall Have ClearHeight Defined In BaseQuantities" description="Space Shall Have ClearHeight Defined In BaseQuantities" identifier="3_05_11_01">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
@@ -1925,7 +1899,33 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_12 : Space Shall Have NetFloorArea Defined" description="Space Shall Have NetFloorArea Defined" identifier="3_05_12">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_12 : Space Shall Have GrossFloorArea Defined" description="Space Shall Have GrossFloorArea Defined" identifier="3_05_12">
+			<ids:applicability minOccurs="1" maxOccurs="unbounded">
+				<ids:entity>
+					<ids:name>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="IFCSPACE" />
+						</xs:restriction>
+					</ids:name>
+				</ids:entity>
+			</ids:applicability>
+			<ids:requirements>
+				<ids:property cardinality="required" dataType="IFCAREAMEASURE">
+					<ids:propertySet>
+						<ids:simpleValue>BaseQuantities</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>GrossFloorArea</ids:simpleValue>
+					</ids:baseName>
+					<ids:value>
+						<xs:restriction base="xs:double">
+							<xs:minExclusive value="0" />
+						</xs:restriction>
+					</ids:value>
+				</ids:property>
+			</ids:requirements>
+		</ids:specification>
+		<ids:specification ifcVersion="IFC2X3" name="3_05_13 : Space Shall Have NetFloorArea Defined" description="Space Shall Have NetFloorArea Defined" identifier="3_05_13">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -1951,7 +1951,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_13 : Space Shall Have Uniclass Classification Defined" description="Space Shall Have Uniclass Classification Defined" identifier="3_05_13">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_14 : Space Shall Have Uniclass Classification Defined" description="Space Shall Have Uniclass Classification Defined" identifier="3_05_14">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2098,7 +2098,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_n/a : Spaces with classification 'S7501, P6001' Should Have Uniclass Classification Classification With Value 'n/a'" description="Spaces with classification 'S7501, P6001' Should Have Uniclass Classification Classification With Value 'n/a'" identifier="3_05_14_n/a">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_n/a : Spaces with classification 'S7501, P6001' Should Have Uniclass Classification Classification With Value 'n/a'" description="Spaces with classification 'S7501, P6001' Should Have Uniclass Classification Classification With Value 'n/a'" identifier="3_05_15_n/a">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2132,7 +2132,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_20_15_59 : Spaces with classification 'S4002, S4004, S4007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_20_15_59'" description="Spaces with classification 'S4002, S4004, S4007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_20_15_59'" identifier="3_05_14_SL_20_15_59">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_20_15_59 : Spaces with classification 'S4002, S4004, S4007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_20_15_59'" description="Spaces with classification 'S4002, S4004, S4007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_20_15_59'" identifier="3_05_15_SL_20_15_59">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2180,7 +2180,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_20_15_71 : Spaces with classification 'S7001, S7004' Should Have Uniclass Classification Classification With Value 'SL_20_15_71'" description="Spaces with classification 'S7001, S7004' Should Have Uniclass Classification Classification With Value 'SL_20_15_71'" identifier="3_05_14_SL_20_15_71">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_20_15_71 : Spaces with classification 'S7001, S7004' Should Have Uniclass Classification Classification With Value 'SL_20_15_71'" description="Spaces with classification 'S7001, S7004' Should Have Uniclass Classification Classification With Value 'SL_20_15_71'" identifier="3_05_15_SL_20_15_71">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2214,7 +2214,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_20_15_73 : Spaces with classification 'S4006, S4009, S4011' Should Have Uniclass Classification Classification With Value 'SL_20_15_73'" description="Spaces with classification 'S4006, S4009, S4011' Should Have Uniclass Classification Classification With Value 'SL_20_15_73'" identifier="3_05_14_SL_20_15_73">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_20_15_73 : Spaces with classification 'S4006, S4009, S4011' Should Have Uniclass Classification Classification With Value 'SL_20_15_73'" description="Spaces with classification 'S4006, S4009, S4011' Should Have Uniclass Classification Classification With Value 'SL_20_15_73'" identifier="3_05_15_SL_20_15_73">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2249,7 +2249,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_20_65_42 : Spaces with classification 'S4001, S4005' Should Have Uniclass Classification Classification With Value 'SL_20_65_42'" description="Spaces with classification 'S4001, S4005' Should Have Uniclass Classification Classification With Value 'SL_20_65_42'" identifier="3_05_14_SL_20_65_42">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_20_65_42 : Spaces with classification 'S4001, S4005' Should Have Uniclass Classification Classification With Value 'SL_20_65_42'" description="Spaces with classification 'S4001, S4005' Should Have Uniclass Classification Classification With Value 'SL_20_65_42'" identifier="3_05_15_SL_20_65_42">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2283,7 +2283,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_20_90_25 : Spaces with classification 'S7042' Should Have Uniclass Classification Classification With Value 'SL_20_90_25'" description="Spaces with classification 'S7042' Should Have Uniclass Classification Classification With Value 'SL_20_90_25'" identifier="3_05_14_SL_20_90_25">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_20_90_25 : Spaces with classification 'S7042' Should Have Uniclass Classification Classification With Value 'SL_20_90_25'" description="Spaces with classification 'S7042' Should Have Uniclass Classification Classification With Value 'SL_20_90_25'" identifier="3_05_15_SL_20_90_25">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2316,7 +2316,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_01 : Spaces with classification 'S2010, S2011, S2012,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_01'" description="Spaces with classification 'S2010, S2011, S2012,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_01'" identifier="3_05_14_SL_25_10_01">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_01 : Spaces with classification 'S2010, S2011, S2012,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_01'" description="Spaces with classification 'S2010, S2011, S2012,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_01'" identifier="3_05_15_SL_25_10_01">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2355,7 +2355,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_04 : Spaces with classification 'S1024, S1032, S1033,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_04'" description="Spaces with classification 'S1024, S1032, S1033,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_04'" identifier="3_05_14_SL_25_10_04">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_04 : Spaces with classification 'S1024, S1032, S1033,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_04'" description="Spaces with classification 'S1024, S1032, S1033,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_04'" identifier="3_05_15_SL_25_10_04">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2392,7 +2392,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_05 : Spaces with classification 'S2044, S2045, S2046,+13 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_05'" description="Spaces with classification 'S2044, S2045, S2046,+13 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_05'" identifier="3_05_14_SL_25_10_05">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_05 : Spaces with classification 'S2044, S2045, S2046,+13 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_05'" description="Spaces with classification 'S2044, S2045, S2046,+13 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_05'" identifier="3_05_15_SL_25_10_05">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2440,7 +2440,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_14 : Spaces with classification 'S1004, S1005, S1006,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_14'" description="Spaces with classification 'S1004, S1005, S1006,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_14'" identifier="3_05_14_SL_25_10_14">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_14 : Spaces with classification 'S1004, S1005, S1006,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_14'" description="Spaces with classification 'S1004, S1005, S1006,+4 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_14'" identifier="3_05_15_SL_25_10_14">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2479,7 +2479,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_21 : Spaces with classification 'S2014, S2015' Should Have Uniclass Classification Classification With Value 'SL_25_10_21'" description="Spaces with classification 'S2014, S2015' Should Have Uniclass Classification Classification With Value 'SL_25_10_21'" identifier="3_05_14_SL_25_10_21">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_21 : Spaces with classification 'S2014, S2015' Should Have Uniclass Classification Classification With Value 'SL_25_10_21'" description="Spaces with classification 'S2014, S2015' Should Have Uniclass Classification Classification With Value 'SL_25_10_21'" identifier="3_05_15_SL_25_10_21">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2513,7 +2513,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_24 : Spaces with classification 'S1045, S1046' Should Have Uniclass Classification Classification With Value 'SL_25_10_24'" description="Spaces with classification 'S1045, S1046' Should Have Uniclass Classification Classification With Value 'SL_25_10_24'" identifier="3_05_14_SL_25_10_24">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_24 : Spaces with classification 'S1045, S1046' Should Have Uniclass Classification Classification With Value 'SL_25_10_24'" description="Spaces with classification 'S1045, S1046' Should Have Uniclass Classification Classification With Value 'SL_25_10_24'" identifier="3_05_15_SL_25_10_24">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2547,7 +2547,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_30 : Spaces with classification 'S1018, S1031' Should Have Uniclass Classification Classification With Value 'SL_25_10_30'" description="Spaces with classification 'S1018, S1031' Should Have Uniclass Classification Classification With Value 'SL_25_10_30'" identifier="3_05_14_SL_25_10_30">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_30 : Spaces with classification 'S1018, S1031' Should Have Uniclass Classification Classification With Value 'SL_25_10_30'" description="Spaces with classification 'S1018, S1031' Should Have Uniclass Classification Classification With Value 'SL_25_10_30'" identifier="3_05_15_SL_25_10_30">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2581,7 +2581,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_41 : Spaces with classification 'S1025' Should Have Uniclass Classification Classification With Value 'SL_25_10_41'" description="Spaces with classification 'S1025' Should Have Uniclass Classification Classification With Value 'SL_25_10_41'" identifier="3_05_14_SL_25_10_41">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_41 : Spaces with classification 'S1025' Should Have Uniclass Classification Classification With Value 'SL_25_10_41'" description="Spaces with classification 'S1025' Should Have Uniclass Classification Classification With Value 'SL_25_10_41'" identifier="3_05_15_SL_25_10_41">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2614,7 +2614,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_54 : Spaces with classification 'S1044, S1047' Should Have Uniclass Classification Classification With Value 'SL_25_10_54'" description="Spaces with classification 'S1044, S1047' Should Have Uniclass Classification Classification With Value 'SL_25_10_54'" identifier="3_05_14_SL_25_10_54">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_54 : Spaces with classification 'S1044, S1047' Should Have Uniclass Classification Classification With Value 'SL_25_10_54'" description="Spaces with classification 'S1044, S1047' Should Have Uniclass Classification Classification With Value 'SL_25_10_54'" identifier="3_05_15_SL_25_10_54">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2648,7 +2648,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_55 : Spaces with classification 'S1019, S1020, S1043' Should Have Uniclass Classification Classification With Value 'SL_25_10_55'" description="Spaces with classification 'S1019, S1020, S1043' Should Have Uniclass Classification Classification With Value 'SL_25_10_55'" identifier="3_05_14_SL_25_10_55">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_55 : Spaces with classification 'S1019, S1020, S1043' Should Have Uniclass Classification Classification With Value 'SL_25_10_55'" description="Spaces with classification 'S1019, S1020, S1043' Should Have Uniclass Classification Classification With Value 'SL_25_10_55'" identifier="3_05_15_SL_25_10_55">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2683,7 +2683,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_57 : Spaces with classification 'S1001, S1002, S1048,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_57'" description="Spaces with classification 'S1001, S1002, S1048,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_57'" identifier="3_05_14_SL_25_10_57">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_57 : Spaces with classification 'S1001, S1002, S1048,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_57'" description="Spaces with classification 'S1001, S1002, S1048,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_57'" identifier="3_05_15_SL_25_10_57">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2719,7 +2719,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_60 : Spaces with classification 'P1002, P1003, P1006,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_60'" description="Spaces with classification 'P1002, P1003, P1006,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_60'" identifier="3_05_14_SL_25_10_60">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_60 : Spaces with classification 'P1002, P1003, P1006,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_60'" description="Spaces with classification 'P1002, P1003, P1006,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_60'" identifier="3_05_15_SL_25_10_60">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2756,7 +2756,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_67 : Spaces with classification 'S1008, S1009, S1010,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_67'" description="Spaces with classification 'S1008, S1009, S1010,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_67'" identifier="3_05_14_SL_25_10_67">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_67 : Spaces with classification 'S1008, S1009, S1010,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_67'" description="Spaces with classification 'S1008, S1009, S1010,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_67'" identifier="3_05_15_SL_25_10_67">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2793,7 +2793,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_72 : Spaces with classification 'S1003, S1015' Should Have Uniclass Classification Classification With Value 'SL_25_10_72'" description="Spaces with classification 'S1003, S1015' Should Have Uniclass Classification Classification With Value 'SL_25_10_72'" identifier="3_05_14_SL_25_10_72">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_72 : Spaces with classification 'S1003, S1015' Should Have Uniclass Classification Classification With Value 'SL_25_10_72'" description="Spaces with classification 'S1003, S1015' Should Have Uniclass Classification Classification With Value 'SL_25_10_72'" identifier="3_05_15_SL_25_10_72">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2827,7 +2827,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_74 : Spaces with classification 'S1037' Should Have Uniclass Classification Classification With Value 'SL_25_10_74'" description="Spaces with classification 'S1037' Should Have Uniclass Classification Classification With Value 'SL_25_10_74'" identifier="3_05_14_SL_25_10_74">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_74 : Spaces with classification 'S1037' Should Have Uniclass Classification Classification With Value 'SL_25_10_74'" description="Spaces with classification 'S1037' Should Have Uniclass Classification Classification With Value 'SL_25_10_74'" identifier="3_05_15_SL_25_10_74">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2860,7 +2860,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_75 : Spaces with classification 'S1026, S1038, S1039' Should Have Uniclass Classification Classification With Value 'SL_25_10_75'" description="Spaces with classification 'S1026, S1038, S1039' Should Have Uniclass Classification Classification With Value 'SL_25_10_75'" identifier="3_05_14_SL_25_10_75">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_75 : Spaces with classification 'S1026, S1038, S1039' Should Have Uniclass Classification Classification With Value 'SL_25_10_75'" description="Spaces with classification 'S1026, S1038, S1039' Should Have Uniclass Classification Classification With Value 'SL_25_10_75'" identifier="3_05_15_SL_25_10_75">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2895,7 +2895,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_78 : Spaces with classification 'S1014' Should Have Uniclass Classification Classification With Value 'SL_25_10_78'" description="Spaces with classification 'S1014' Should Have Uniclass Classification Classification With Value 'SL_25_10_78'" identifier="3_05_14_SL_25_10_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_78 : Spaces with classification 'S1014' Should Have Uniclass Classification Classification With Value 'SL_25_10_78'" description="Spaces with classification 'S1014' Should Have Uniclass Classification Classification With Value 'SL_25_10_78'" identifier="3_05_15_SL_25_10_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2928,7 +2928,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_10_84 : Spaces with classification 'S3003, S3004, S3005,+3 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_84'" description="Spaces with classification 'S3003, S3004, S3005,+3 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_84'" identifier="3_05_14_SL_25_10_84">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_10_84 : Spaces with classification 'S3003, S3004, S3005,+3 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_84'" description="Spaces with classification 'S3003, S3004, S3005,+3 more' Should Have Uniclass Classification Classification With Value 'SL_25_10_84'" identifier="3_05_15_SL_25_10_84">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2966,7 +2966,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_40_22 : Spaces with classification 'S1021, S1022, S1027,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_22'" description="Spaces with classification 'S1021, S1022, S1027,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_22'" identifier="3_05_14_SL_25_40_22">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_40_22 : Spaces with classification 'S1021, S1022, S1027,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_22'" description="Spaces with classification 'S1021, S1022, S1027,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_22'" identifier="3_05_15_SL_25_40_22">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3003,7 +3003,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_40_23 : Spaces with classification 'S1023, S1030' Should Have Uniclass Classification Classification With Value 'SL_25_40_23'" description="Spaces with classification 'S1023, S1030' Should Have Uniclass Classification Classification With Value 'SL_25_40_23'" identifier="3_05_14_SL_25_40_23">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_40_23 : Spaces with classification 'S1023, S1030' Should Have Uniclass Classification Classification With Value 'SL_25_40_23'" description="Spaces with classification 'S1023, S1030' Should Have Uniclass Classification Classification With Value 'SL_25_40_23'" identifier="3_05_15_SL_25_40_23">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3037,7 +3037,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_40_42 : Spaces with classification 'S2005, S2062, S2064,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_42'" description="Spaces with classification 'S2005, S2062, S2064,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_42'" identifier="3_05_14_SL_25_40_42">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_40_42 : Spaces with classification 'S2005, S2062, S2064,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_42'" description="Spaces with classification 'S2005, S2062, S2064,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_40_42'" identifier="3_05_15_SL_25_40_42">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3073,7 +3073,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_40_61 : Spaces with classification 'P1008' Should Have Uniclass Classification Classification With Value 'SL_25_40_61'" description="Spaces with classification 'P1008' Should Have Uniclass Classification Classification With Value 'SL_25_40_61'" identifier="3_05_14_SL_25_40_61">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_40_61 : Spaces with classification 'P1008' Should Have Uniclass Classification Classification With Value 'SL_25_40_61'" description="Spaces with classification 'P1008' Should Have Uniclass Classification Classification With Value 'SL_25_40_61'" identifier="3_05_15_SL_25_40_61">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3106,7 +3106,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_40_65 : Spaces with classification 'S1036' Should Have Uniclass Classification Classification With Value 'SL_25_40_65'" description="Spaces with classification 'S1036' Should Have Uniclass Classification Classification With Value 'SL_25_40_65'" identifier="3_05_14_SL_25_40_65">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_40_65 : Spaces with classification 'S1036' Should Have Uniclass Classification Classification With Value 'SL_25_40_65'" description="Spaces with classification 'S1036' Should Have Uniclass Classification Classification With Value 'SL_25_40_65'" identifier="3_05_15_SL_25_40_65">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3139,7 +3139,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_70_13 : Spaces with classification 'S4029, S4030, S4032,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_70_13'" description="Spaces with classification 'S4029, S4030, S4032,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_70_13'" identifier="3_05_14_SL_25_70_13">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_70_13 : Spaces with classification 'S4029, S4030, S4032,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_70_13'" description="Spaces with classification 'S4029, S4030, S4032,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_70_13'" identifier="3_05_15_SL_25_70_13">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3175,7 +3175,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_75_45 : Spaces with classification 'S3048, S3049, S3051,+6 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_45'" description="Spaces with classification 'S3048, S3049, S3051,+6 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_45'" identifier="3_05_14_SL_25_75_45">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_75_45 : Spaces with classification 'S3048, S3049, S3051,+6 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_45'" description="Spaces with classification 'S3048, S3049, S3051,+6 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_45'" identifier="3_05_15_SL_25_75_45">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3216,7 +3216,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_75_55 : Spaces with classification 'S3030, S3031, S3032,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_55'" description="Spaces with classification 'S3030, S3031, S3032,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_55'" identifier="3_05_14_SL_25_75_55">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_75_55 : Spaces with classification 'S3030, S3031, S3032,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_55'" description="Spaces with classification 'S3030, S3031, S3032,+2 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_55'" identifier="3_05_15_SL_25_75_55">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3253,7 +3253,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_75_76 : Spaces with classification 'S3036, S3037, S3038,+9 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_76'" description="Spaces with classification 'S3036, S3037, S3038,+9 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_76'" identifier="3_05_14_SL_25_75_76">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_75_76 : Spaces with classification 'S3036, S3037, S3038,+9 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_76'" description="Spaces with classification 'S3036, S3037, S3038,+9 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_76'" identifier="3_05_15_SL_25_75_76">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3297,7 +3297,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_75_80 : Spaces with classification 'S3001, S3002, S3008,+10 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_80'" description="Spaces with classification 'S3001, S3002, S3008,+10 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_80'" identifier="3_05_14_SL_25_75_80">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_75_80 : Spaces with classification 'S3001, S3002, S3008,+10 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_80'" description="Spaces with classification 'S3001, S3002, S3008,+10 more' Should Have Uniclass Classification Classification With Value 'SL_25_75_80'" identifier="3_05_15_SL_25_75_80">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3342,7 +3342,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_75_82 : Spaces with classification 'S3059' Should Have Uniclass Classification Classification With Value 'SL_25_75_82'" description="Spaces with classification 'S3059' Should Have Uniclass Classification Classification With Value 'SL_25_75_82'" identifier="3_05_14_SL_25_75_82">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_75_82 : Spaces with classification 'S3059' Should Have Uniclass Classification Classification With Value 'SL_25_75_82'" description="Spaces with classification 'S3059' Should Have Uniclass Classification Classification With Value 'SL_25_75_82'" identifier="3_05_15_SL_25_75_82">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3375,7 +3375,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_80_22 : Spaces with classification 'S6015' Should Have Uniclass Classification Classification With Value 'SL_25_80_22'" description="Spaces with classification 'S6015' Should Have Uniclass Classification Classification With Value 'SL_25_80_22'" identifier="3_05_14_SL_25_80_22">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_80_22 : Spaces with classification 'S6015' Should Have Uniclass Classification Classification With Value 'SL_25_80_22'" description="Spaces with classification 'S6015' Should Have Uniclass Classification Classification With Value 'SL_25_80_22'" identifier="3_05_15_SL_25_80_22">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3408,7 +3408,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_25_80_75 : Spaces with classification 'S6017, S6019, S6020,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_80_75'" description="Spaces with classification 'S6017, S6019, S6020,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_80_75'" identifier="3_05_14_SL_25_80_75">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_25_80_75 : Spaces with classification 'S6017, S6019, S6020,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_80_75'" description="Spaces with classification 'S6017, S6019, S6020,+1 more' Should Have Uniclass Classification Classification With Value 'SL_25_80_75'" identifier="3_05_15_SL_25_80_75">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3444,7 +3444,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_30_50_40 : Spaces with classification 'S3009' Should Have Uniclass Classification Classification With Value 'SL_30_50_40'" description="Spaces with classification 'S3009' Should Have Uniclass Classification Classification With Value 'SL_30_50_40'" identifier="3_05_14_SL_30_50_40">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_30_50_40 : Spaces with classification 'S3009' Should Have Uniclass Classification Classification With Value 'SL_30_50_40'" description="Spaces with classification 'S3009' Should Have Uniclass Classification Classification With Value 'SL_30_50_40'" identifier="3_05_15_SL_30_50_40">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3477,7 +3477,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_30_60_47 : Spaces with classification 'S7058, S7091' Should Have Uniclass Classification Classification With Value 'SL_30_60_47'" description="Spaces with classification 'S7058, S7091' Should Have Uniclass Classification Classification With Value 'SL_30_60_47'" identifier="3_05_14_SL_30_60_47">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_30_60_47 : Spaces with classification 'S7058, S7091' Should Have Uniclass Classification Classification With Value 'SL_30_60_47'" description="Spaces with classification 'S7058, S7091' Should Have Uniclass Classification Classification With Value 'SL_30_60_47'" identifier="3_05_15_SL_30_60_47">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3511,7 +3511,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_10_37 : Spaces with classification 'P4017, P5042, P6015' Should Have Uniclass Classification Classification With Value 'SL_32_10_37'" description="Spaces with classification 'P4017, P5042, P6015' Should Have Uniclass Classification Classification With Value 'SL_32_10_37'" identifier="3_05_14_SL_32_10_37">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_10_37 : Spaces with classification 'P4017, P5042, P6015' Should Have Uniclass Classification Classification With Value 'SL_32_10_37'" description="Spaces with classification 'P4017, P5042, P6015' Should Have Uniclass Classification Classification With Value 'SL_32_10_37'" identifier="3_05_15_SL_32_10_37">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3546,7 +3546,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_35_04 : Spaces with classification 'P4010, P4014, P4015' Should Have Uniclass Classification Classification With Value 'SL_32_35_04'" description="Spaces with classification 'P4010, P4014, P4015' Should Have Uniclass Classification Classification With Value 'SL_32_35_04'" identifier="3_05_14_SL_32_35_04">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_35_04 : Spaces with classification 'P4010, P4014, P4015' Should Have Uniclass Classification Classification With Value 'SL_32_35_04'" description="Spaces with classification 'P4010, P4014, P4015' Should Have Uniclass Classification Classification With Value 'SL_32_35_04'" identifier="3_05_15_SL_32_35_04">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3581,7 +3581,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_35_30 : Spaces with classification 'P4019, P4020' Should Have Uniclass Classification Classification With Value 'SL_32_35_30'" description="Spaces with classification 'P4019, P4020' Should Have Uniclass Classification Classification With Value 'SL_32_35_30'" identifier="3_05_14_SL_32_35_30">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_35_30 : Spaces with classification 'P4019, P4020' Should Have Uniclass Classification Classification With Value 'SL_32_35_30'" description="Spaces with classification 'P4019, P4020' Should Have Uniclass Classification Classification With Value 'SL_32_35_30'" identifier="3_05_15_SL_32_35_30">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3615,7 +3615,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_40_90 : Spaces with classification 'P2012, P4018, P5041,+1 more' Should Have Uniclass Classification Classification With Value 'SL_32_40_90'" description="Spaces with classification 'P2012, P4018, P5041,+1 more' Should Have Uniclass Classification Classification With Value 'SL_32_40_90'" identifier="3_05_14_SL_32_40_90">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_40_90 : Spaces with classification 'P2012, P4018, P5041,+1 more' Should Have Uniclass Classification Classification With Value 'SL_32_40_90'" description="Spaces with classification 'P2012, P4018, P5041,+1 more' Should Have Uniclass Classification Classification With Value 'SL_32_40_90'" identifier="3_05_15_SL_32_40_90">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3651,7 +3651,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_03 : Spaces with classification 'P5002' Should Have Uniclass Classification Classification With Value 'SL_32_80_03'" description="Spaces with classification 'P5002' Should Have Uniclass Classification Classification With Value 'SL_32_80_03'" identifier="3_05_14_SL_32_80_03">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_03 : Spaces with classification 'P5002' Should Have Uniclass Classification Classification With Value 'SL_32_80_03'" description="Spaces with classification 'P5002' Should Have Uniclass Classification Classification With Value 'SL_32_80_03'" identifier="3_05_15_SL_32_80_03">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3684,7 +3684,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_46 : Spaces with classification 'P6013' Should Have Uniclass Classification Classification With Value 'SL_32_80_46'" description="Spaces with classification 'P6013' Should Have Uniclass Classification Classification With Value 'SL_32_80_46'" identifier="3_05_14_SL_32_80_46">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_46 : Spaces with classification 'P6013' Should Have Uniclass Classification Classification With Value 'SL_32_80_46'" description="Spaces with classification 'P6013' Should Have Uniclass Classification Classification With Value 'SL_32_80_46'" identifier="3_05_15_SL_32_80_46">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3717,7 +3717,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_47 : Spaces with classification 'P4002' Should Have Uniclass Classification Classification With Value 'SL_32_80_47'" description="Spaces with classification 'P4002' Should Have Uniclass Classification Classification With Value 'SL_32_80_47'" identifier="3_05_14_SL_32_80_47">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_47 : Spaces with classification 'P4002' Should Have Uniclass Classification Classification With Value 'SL_32_80_47'" description="Spaces with classification 'P4002' Should Have Uniclass Classification Classification With Value 'SL_32_80_47'" identifier="3_05_15_SL_32_80_47">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3750,7 +3750,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_48 : Spaces with classification 'P3003' Should Have Uniclass Classification Classification With Value 'SL_32_80_48'" description="Spaces with classification 'P3003' Should Have Uniclass Classification Classification With Value 'SL_32_80_48'" identifier="3_05_14_SL_32_80_48">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_48 : Spaces with classification 'P3003' Should Have Uniclass Classification Classification With Value 'SL_32_80_48'" description="Spaces with classification 'P3003' Should Have Uniclass Classification Classification With Value 'SL_32_80_48'" identifier="3_05_15_SL_32_80_48">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3783,7 +3783,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_95 : Spaces with classification 'P6016' Should Have Uniclass Classification Classification With Value 'SL_32_80_95'" description="Spaces with classification 'P6016' Should Have Uniclass Classification Classification With Value 'SL_32_80_95'" identifier="3_05_14_SL_32_80_95">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_95 : Spaces with classification 'P6016' Should Have Uniclass Classification Classification With Value 'SL_32_80_95'" description="Spaces with classification 'P6016' Should Have Uniclass Classification Classification With Value 'SL_32_80_95'" identifier="3_05_15_SL_32_80_95">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3816,7 +3816,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_32_80_97 : Spaces with classification 'P3001, P3004, P6017' Should Have Uniclass Classification Classification With Value 'SL_32_80_97'" description="Spaces with classification 'P3001, P3004, P6017' Should Have Uniclass Classification Classification With Value 'SL_32_80_97'" identifier="3_05_14_SL_32_80_97">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_32_80_97 : Spaces with classification 'P3001, P3004, P6017' Should Have Uniclass Classification Classification With Value 'SL_32_80_97'" description="Spaces with classification 'P3001, P3004, P6017' Should Have Uniclass Classification Classification With Value 'SL_32_80_97'" identifier="3_05_15_SL_32_80_97">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3851,7 +3851,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_10_15 : Spaces with classification 'S3010' Should Have Uniclass Classification Classification With Value 'SL_35_10_15'" description="Spaces with classification 'S3010' Should Have Uniclass Classification Classification With Value 'SL_35_10_15'" identifier="3_05_14_SL_35_10_15">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_10_15 : Spaces with classification 'S3010' Should Have Uniclass Classification Classification With Value 'SL_35_10_15'" description="Spaces with classification 'S3010' Should Have Uniclass Classification Classification With Value 'SL_35_10_15'" identifier="3_05_15_SL_35_10_15">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3884,7 +3884,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_10_31 : Spaces with classification 'S4003, S4008, S4012' Should Have Uniclass Classification Classification With Value 'SL_35_10_31'" description="Spaces with classification 'S4003, S4008, S4012' Should Have Uniclass Classification Classification With Value 'SL_35_10_31'" identifier="3_05_14_SL_35_10_31">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_10_31 : Spaces with classification 'S4003, S4008, S4012' Should Have Uniclass Classification Classification With Value 'SL_35_10_31'" description="Spaces with classification 'S4003, S4008, S4012' Should Have Uniclass Classification Classification With Value 'SL_35_10_31'" identifier="3_05_15_SL_35_10_31">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3919,7 +3919,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_10_58 : Spaces with classification 'S3024' Should Have Uniclass Classification Classification With Value 'SL_35_10_58'" description="Spaces with classification 'S3024' Should Have Uniclass Classification Classification With Value 'SL_35_10_58'" identifier="3_05_14_SL_35_10_58">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_10_58 : Spaces with classification 'S3024' Should Have Uniclass Classification Classification With Value 'SL_35_10_58'" description="Spaces with classification 'S3024' Should Have Uniclass Classification Classification With Value 'SL_35_10_58'" identifier="3_05_15_SL_35_10_58">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3952,7 +3952,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_10_66 : Spaces with classification 'S3023' Should Have Uniclass Classification Classification With Value 'SL_35_10_66'" description="Spaces with classification 'S3023' Should Have Uniclass Classification Classification With Value 'SL_35_10_66'" identifier="3_05_14_SL_35_10_66">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_10_66 : Spaces with classification 'S3023' Should Have Uniclass Classification Classification With Value 'SL_35_10_66'" description="Spaces with classification 'S3023' Should Have Uniclass Classification Classification With Value 'SL_35_10_66'" identifier="3_05_15_SL_35_10_66">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -3985,7 +3985,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_10_88 : Spaces with classification 'S3019, S3020, S3028' Should Have Uniclass Classification Classification With Value 'SL_35_10_88'" description="Spaces with classification 'S3019, S3020, S3028' Should Have Uniclass Classification Classification With Value 'SL_35_10_88'" identifier="3_05_14_SL_35_10_88">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_10_88 : Spaces with classification 'S3019, S3020, S3028' Should Have Uniclass Classification Classification With Value 'SL_35_10_88'" description="Spaces with classification 'S3019, S3020, S3028' Should Have Uniclass Classification Classification With Value 'SL_35_10_88'" identifier="3_05_15_SL_35_10_88">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4020,7 +4020,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_50_60 : Spaces with classification 'S4043' Should Have Uniclass Classification Classification With Value 'SL_35_50_60'" description="Spaces with classification 'S4043' Should Have Uniclass Classification Classification With Value 'SL_35_50_60'" identifier="3_05_14_SL_35_50_60">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_50_60 : Spaces with classification 'S4043' Should Have Uniclass Classification Classification With Value 'SL_35_50_60'" description="Spaces with classification 'S4043' Should Have Uniclass Classification Classification With Value 'SL_35_50_60'" identifier="3_05_15_SL_35_50_60">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4053,7 +4053,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_50_69 : Spaces with classification 'S3025, S3026, S3027' Should Have Uniclass Classification Classification With Value 'SL_35_50_69'" description="Spaces with classification 'S3025, S3026, S3027' Should Have Uniclass Classification Classification With Value 'SL_35_50_69'" identifier="3_05_14_SL_35_50_69">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_50_69 : Spaces with classification 'S3025, S3026, S3027' Should Have Uniclass Classification Classification With Value 'SL_35_50_69'" description="Spaces with classification 'S3025, S3026, S3027' Should Have Uniclass Classification Classification With Value 'SL_35_50_69'" identifier="3_05_15_SL_35_50_69">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4088,7 +4088,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_50_78 : Spaces with classification 'S3022' Should Have Uniclass Classification Classification With Value 'SL_35_50_78'" description="Spaces with classification 'S3022' Should Have Uniclass Classification Classification With Value 'SL_35_50_78'" identifier="3_05_14_SL_35_50_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_50_78 : Spaces with classification 'S3022' Should Have Uniclass Classification Classification With Value 'SL_35_50_78'" description="Spaces with classification 'S3022' Should Have Uniclass Classification Classification With Value 'SL_35_50_78'" identifier="3_05_15_SL_35_50_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4121,7 +4121,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_60_14 : Spaces with classification 'S7022, S7023, S7024,+10 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_14'" description="Spaces with classification 'S7022, S7023, S7024,+10 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_14'" identifier="3_05_14_SL_35_60_14">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_60_14 : Spaces with classification 'S7022, S7023, S7024,+10 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_14'" description="Spaces with classification 'S7022, S7023, S7024,+10 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_14'" identifier="3_05_15_SL_35_60_14">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4166,7 +4166,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_60_45 : Spaces with classification 'S4018, S4019' Should Have Uniclass Classification Classification With Value 'SL_35_60_45'" description="Spaces with classification 'S4018, S4019' Should Have Uniclass Classification Classification With Value 'SL_35_60_45'" identifier="3_05_14_SL_35_60_45">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_60_45 : Spaces with classification 'S4018, S4019' Should Have Uniclass Classification Classification With Value 'SL_35_60_45'" description="Spaces with classification 'S4018, S4019' Should Have Uniclass Classification Classification With Value 'SL_35_60_45'" identifier="3_05_15_SL_35_60_45">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4200,7 +4200,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_60_78 : Spaces with classification 'S6042, S6043, S6045,+3 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_78'" description="Spaces with classification 'S6042, S6043, S6045,+3 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_78'" identifier="3_05_14_SL_35_60_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_60_78 : Spaces with classification 'S6042, S6043, S6045,+3 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_78'" description="Spaces with classification 'S6042, S6043, S6045,+3 more' Should Have Uniclass Classification Classification With Value 'SL_35_60_78'" identifier="3_05_15_SL_35_60_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4238,7 +4238,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_00 : Spaces with classification 'S7075, S7077' Should Have Uniclass Classification Classification With Value 'SL_35_80_00'" description="Spaces with classification 'S7075, S7077' Should Have Uniclass Classification Classification With Value 'SL_35_80_00'" identifier="3_05_14_SL_35_80_00">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_00 : Spaces with classification 'S7075, S7077' Should Have Uniclass Classification Classification With Value 'SL_35_80_00'" description="Spaces with classification 'S7075, S7077' Should Have Uniclass Classification Classification With Value 'SL_35_80_00'" identifier="3_05_15_SL_35_80_00">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4272,7 +4272,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_01 : Spaces with classification 'S7085, S7086, S7087' Should Have Uniclass Classification Classification With Value 'SL_35_80_01'" description="Spaces with classification 'S7085, S7086, S7087' Should Have Uniclass Classification Classification With Value 'SL_35_80_01'" identifier="3_05_14_SL_35_80_01">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_01 : Spaces with classification 'S7085, S7086, S7087' Should Have Uniclass Classification Classification With Value 'SL_35_80_01'" description="Spaces with classification 'S7085, S7086, S7087' Should Have Uniclass Classification Classification With Value 'SL_35_80_01'" identifier="3_05_15_SL_35_80_01">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4307,7 +4307,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_03 : Spaces with classification 'S7065, S7071, S7072' Should Have Uniclass Classification Classification With Value 'SL_35_80_03'" description="Spaces with classification 'S7065, S7071, S7072' Should Have Uniclass Classification Classification With Value 'SL_35_80_03'" identifier="3_05_14_SL_35_80_03">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_03 : Spaces with classification 'S7065, S7071, S7072' Should Have Uniclass Classification Classification With Value 'SL_35_80_03'" description="Spaces with classification 'S7065, S7071, S7072' Should Have Uniclass Classification Classification With Value 'SL_35_80_03'" identifier="3_05_15_SL_35_80_03">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4342,7 +4342,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_39 : Spaces with classification 'S7008, S7012, S7073,+1 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_39'" description="Spaces with classification 'S7008, S7012, S7073,+1 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_39'" identifier="3_05_14_SL_35_80_39">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_39 : Spaces with classification 'S7008, S7012, S7073,+1 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_39'" description="Spaces with classification 'S7008, S7012, S7073,+1 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_39'" identifier="3_05_15_SL_35_80_39">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4378,7 +4378,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_80 : Spaces with classification 'S7084, S7088, S7089' Should Have Uniclass Classification Classification With Value 'SL_35_80_80'" description="Spaces with classification 'S7084, S7088, S7089' Should Have Uniclass Classification Classification With Value 'SL_35_80_80'" identifier="3_05_14_SL_35_80_80">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_80 : Spaces with classification 'S7084, S7088, S7089' Should Have Uniclass Classification Classification With Value 'SL_35_80_80'" description="Spaces with classification 'S7084, S7088, S7089' Should Have Uniclass Classification Classification With Value 'SL_35_80_80'" identifier="3_05_15_SL_35_80_80">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4413,7 +4413,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_80_89 : Spaces with classification 'S7006, S7009, S7011,+16 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_89'" description="Spaces with classification 'S7006, S7009, S7011,+16 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_89'" identifier="3_05_14_SL_35_80_89">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_80_89 : Spaces with classification 'S7006, S7009, S7011,+16 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_89'" description="Spaces with classification 'S7006, S7009, S7011,+16 more' Should Have Uniclass Classification Classification With Value 'SL_35_80_89'" identifier="3_05_15_SL_35_80_89">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4464,7 +4464,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_35_85_03 : Spaces with classification 'P3002' Should Have Uniclass Classification Classification With Value 'SL_35_85_03'" description="Spaces with classification 'P3002' Should Have Uniclass Classification Classification With Value 'SL_35_85_03'" identifier="3_05_14_SL_35_85_03">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_35_85_03 : Spaces with classification 'P3002' Should Have Uniclass Classification Classification With Value 'SL_35_85_03'" description="Spaces with classification 'P3002' Should Have Uniclass Classification Classification With Value 'SL_35_85_03'" identifier="3_05_15_SL_35_85_03">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4497,7 +4497,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_05_79 : Spaces with classification 'P4008, P4009, P4011,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_05_79'" description="Spaces with classification 'P4008, P4009, P4011,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_05_79'" identifier="3_05_14_SL_40_05_79">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_05_79 : Spaces with classification 'P4008, P4009, P4011,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_05_79'" description="Spaces with classification 'P4008, P4009, P4011,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_05_79'" identifier="3_05_15_SL_40_05_79">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4533,7 +4533,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_05_81 : Spaces with classification 'S3021' Should Have Uniclass Classification Classification With Value 'SL_40_05_81'" description="Spaces with classification 'S3021' Should Have Uniclass Classification Classification With Value 'SL_40_05_81'" identifier="3_05_14_SL_40_05_81">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_05_81 : Spaces with classification 'S3021' Should Have Uniclass Classification Classification With Value 'SL_40_05_81'" description="Spaces with classification 'S3021' Should Have Uniclass Classification Classification With Value 'SL_40_05_81'" identifier="3_05_15_SL_40_05_81">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4566,7 +4566,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_20_22 : Spaces with classification 'S2016, S2017, S2018,+21 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_22'" description="Spaces with classification 'S2016, S2017, S2018,+21 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_22'" identifier="3_05_14_SL_40_20_22">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_20_22 : Spaces with classification 'S2016, S2017, S2018,+21 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_22'" description="Spaces with classification 'S2016, S2017, S2018,+21 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_22'" identifier="3_05_15_SL_40_20_22">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4622,7 +4622,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_20_43 : Spaces with classification 'S2036, S2037, S2038,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_43'" description="Spaces with classification 'S2036, S2037, S2038,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_43'" identifier="3_05_14_SL_40_20_43">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_20_43 : Spaces with classification 'S2036, S2037, S2038,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_43'" description="Spaces with classification 'S2036, S2037, S2038,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_20_43'" identifier="3_05_15_SL_40_20_43">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4658,7 +4658,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_20_59 : Spaces with classification 'P1004' Should Have Uniclass Classification Classification With Value 'SL_40_20_59'" description="Spaces with classification 'P1004' Should Have Uniclass Classification Classification With Value 'SL_40_20_59'" identifier="3_05_14_SL_40_20_59">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_20_59 : Spaces with classification 'P1004' Should Have Uniclass Classification Classification With Value 'SL_40_20_59'" description="Spaces with classification 'P1004' Should Have Uniclass Classification Classification With Value 'SL_40_20_59'" identifier="3_05_15_SL_40_20_59">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4691,7 +4691,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_55_34 : Spaces with classification 'P4001, P4003, P4004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_34'" description="Spaces with classification 'P4001, P4003, P4004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_34'" identifier="3_05_14_SL_40_55_34">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_55_34 : Spaces with classification 'P4001, P4003, P4004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_34'" description="Spaces with classification 'P4001, P4003, P4004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_34'" identifier="3_05_15_SL_40_55_34">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4727,7 +4727,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_55_36 : Spaces with classification 'P1001, P2001, P2006' Should Have Uniclass Classification Classification With Value 'SL_40_55_36'" description="Spaces with classification 'P1001, P2001, P2006' Should Have Uniclass Classification Classification With Value 'SL_40_55_36'" identifier="3_05_14_SL_40_55_36">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_55_36 : Spaces with classification 'P1001, P2001, P2006' Should Have Uniclass Classification Classification With Value 'SL_40_55_36'" description="Spaces with classification 'P1001, P2001, P2006' Should Have Uniclass Classification Classification With Value 'SL_40_55_36'" identifier="3_05_15_SL_40_55_36">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4762,7 +4762,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_55_59 : Spaces with classification 'P1009, P1010, P1012,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_59'" description="Spaces with classification 'P1009, P1010, P1012,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_59'" identifier="3_05_14_SL_40_55_59">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_55_59 : Spaces with classification 'P1009, P1010, P1012,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_59'" description="Spaces with classification 'P1009, P1010, P1012,+1 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_59'" identifier="3_05_15_SL_40_55_59">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4798,7 +4798,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_55_61 : Spaces with classification 'P1014' Should Have Uniclass Classification Classification With Value 'SL_40_55_61'" description="Spaces with classification 'P1014' Should Have Uniclass Classification Classification With Value 'SL_40_55_61'" identifier="3_05_14_SL_40_55_61">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_55_61 : Spaces with classification 'P1014' Should Have Uniclass Classification Classification With Value 'SL_40_55_61'" description="Spaces with classification 'P1014' Should Have Uniclass Classification Classification With Value 'SL_40_55_61'" identifier="3_05_15_SL_40_55_61">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4831,7 +4831,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_55_64 : Spaces with classification 'P2008, P2009, P2010,+6 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_64'" description="Spaces with classification 'P2008, P2009, P2010,+6 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_64'" identifier="3_05_14_SL_40_55_64">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_55_64 : Spaces with classification 'P2008, P2009, P2010,+6 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_64'" description="Spaces with classification 'P2008, P2009, P2010,+6 more' Should Have Uniclass Classification Classification With Value 'SL_40_55_64'" identifier="3_05_15_SL_40_55_64">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4872,7 +4872,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_40_60_78 : Spaces with classification 'S3035' Should Have Uniclass Classification Classification With Value 'SL_40_60_78'" description="Spaces with classification 'S3035' Should Have Uniclass Classification Classification With Value 'SL_40_60_78'" identifier="3_05_14_SL_40_60_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_40_60_78 : Spaces with classification 'S3035' Should Have Uniclass Classification Classification With Value 'SL_40_60_78'" description="Spaces with classification 'S3035' Should Have Uniclass Classification Classification With Value 'SL_40_60_78'" identifier="3_05_15_SL_40_60_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4905,7 +4905,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_32 : Spaces with classification 'P5026, P5027, P5028' Should Have Uniclass Classification Classification With Value 'SL_42_15_32'" description="Spaces with classification 'P5026, P5027, P5028' Should Have Uniclass Classification Classification With Value 'SL_42_15_32'" identifier="3_05_14_SL_42_15_32">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_32 : Spaces with classification 'P5026, P5027, P5028' Should Have Uniclass Classification Classification With Value 'SL_42_15_32'" description="Spaces with classification 'P5026, P5027, P5028' Should Have Uniclass Classification Classification With Value 'SL_42_15_32'" identifier="3_05_15_SL_42_15_32">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4940,7 +4940,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_37 : Spaces with classification 'P5029' Should Have Uniclass Classification Classification With Value 'SL_42_15_37'" description="Spaces with classification 'P5029' Should Have Uniclass Classification Classification With Value 'SL_42_15_37'" identifier="3_05_14_SL_42_15_37">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_37 : Spaces with classification 'P5029' Should Have Uniclass Classification Classification With Value 'SL_42_15_37'" description="Spaces with classification 'P5029' Should Have Uniclass Classification Classification With Value 'SL_42_15_37'" identifier="3_05_15_SL_42_15_37">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -4973,7 +4973,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_47 : Spaces with classification 'P5030' Should Have Uniclass Classification Classification With Value 'SL_42_15_47'" description="Spaces with classification 'P5030' Should Have Uniclass Classification Classification With Value 'SL_42_15_47'" identifier="3_05_14_SL_42_15_47">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_47 : Spaces with classification 'P5030' Should Have Uniclass Classification Classification With Value 'SL_42_15_47'" description="Spaces with classification 'P5030' Should Have Uniclass Classification Classification With Value 'SL_42_15_47'" identifier="3_05_15_SL_42_15_47">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5006,7 +5006,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_55 : Spaces with classification 'P2002, P2003, P2004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_55'" description="Spaces with classification 'P2002, P2003, P2004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_55'" identifier="3_05_14_SL_42_15_55">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_55 : Spaces with classification 'P2002, P2003, P2004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_55'" description="Spaces with classification 'P2002, P2003, P2004,+1 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_55'" identifier="3_05_15_SL_42_15_55">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5042,7 +5042,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_60 : Spaces with classification 'P5001, P5003, P5004,+24 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_60'" description="Spaces with classification 'P5001, P5003, P5004,+24 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_60'" identifier="3_05_14_SL_42_15_60">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_60 : Spaces with classification 'P5001, P5003, P5004,+24 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_60'" description="Spaces with classification 'P5001, P5003, P5004,+24 more' Should Have Uniclass Classification Classification With Value 'SL_42_15_60'" identifier="3_05_15_SL_42_15_60">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5101,7 +5101,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_15_78 : Spaces with classification 'P5031' Should Have Uniclass Classification Classification With Value 'SL_42_15_78'" description="Spaces with classification 'P5031' Should Have Uniclass Classification Classification With Value 'SL_42_15_78'" identifier="3_05_14_SL_42_15_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_15_78 : Spaces with classification 'P5031' Should Have Uniclass Classification Classification With Value 'SL_42_15_78'" description="Spaces with classification 'P5031' Should Have Uniclass Classification Classification With Value 'SL_42_15_78'" identifier="3_05_15_SL_42_15_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5134,7 +5134,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_40_30 : Spaces with classification 'S1040, S1041, S1042' Should Have Uniclass Classification Classification With Value 'SL_42_40_30'" description="Spaces with classification 'S1040, S1041, S1042' Should Have Uniclass Classification Classification With Value 'SL_42_40_30'" identifier="3_05_14_SL_42_40_30">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_40_30 : Spaces with classification 'S1040, S1041, S1042' Should Have Uniclass Classification Classification With Value 'SL_42_40_30'" description="Spaces with classification 'S1040, S1041, S1042' Should Have Uniclass Classification Classification With Value 'SL_42_40_30'" identifier="3_05_15_SL_42_40_30">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5169,7 +5169,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_40_35 : Spaces with classification 'S2007' Should Have Uniclass Classification Classification With Value 'SL_42_40_35'" description="Spaces with classification 'S2007' Should Have Uniclass Classification Classification With Value 'SL_42_40_35'" identifier="3_05_14_SL_42_40_35">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_40_35 : Spaces with classification 'S2007' Should Have Uniclass Classification Classification With Value 'SL_42_40_35'" description="Spaces with classification 'S2007' Should Have Uniclass Classification Classification With Value 'SL_42_40_35'" identifier="3_05_15_SL_42_40_35">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5202,7 +5202,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_40_82 : Spaces with classification 'S2006, S2008, S2009' Should Have Uniclass Classification Classification With Value 'SL_42_40_82'" description="Spaces with classification 'S2006, S2008, S2009' Should Have Uniclass Classification Classification With Value 'SL_42_40_82'" identifier="3_05_14_SL_42_40_82">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_40_82 : Spaces with classification 'S2006, S2008, S2009' Should Have Uniclass Classification Classification With Value 'SL_42_40_82'" description="Spaces with classification 'S2006, S2008, S2009' Should Have Uniclass Classification Classification With Value 'SL_42_40_82'" identifier="3_05_15_SL_42_40_82">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5237,7 +5237,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_55_56 : Spaces with classification 'P5039' Should Have Uniclass Classification Classification With Value 'SL_42_55_56'" description="Spaces with classification 'P5039' Should Have Uniclass Classification Classification With Value 'SL_42_55_56'" identifier="3_05_14_SL_42_55_56">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_55_56 : Spaces with classification 'P5039' Should Have Uniclass Classification Classification With Value 'SL_42_55_56'" description="Spaces with classification 'P5039' Should Have Uniclass Classification Classification With Value 'SL_42_55_56'" identifier="3_05_15_SL_42_55_56">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5270,7 +5270,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_55_90 : Spaces with classification 'P5038, P5040' Should Have Uniclass Classification Classification With Value 'SL_42_55_90'" description="Spaces with classification 'P5038, P5040' Should Have Uniclass Classification Classification With Value 'SL_42_55_90'" identifier="3_05_14_SL_42_55_90">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_55_90 : Spaces with classification 'P5038, P5040' Should Have Uniclass Classification Classification With Value 'SL_42_55_90'" description="Spaces with classification 'P5038, P5040' Should Have Uniclass Classification Classification With Value 'SL_42_55_90'" identifier="3_05_15_SL_42_55_90">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5304,7 +5304,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_42_85_59 : Spaces with classification 'P2007' Should Have Uniclass Classification Classification With Value 'SL_42_85_59'" description="Spaces with classification 'P2007' Should Have Uniclass Classification Classification With Value 'SL_42_85_59'" identifier="3_05_14_SL_42_85_59">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_42_85_59 : Spaces with classification 'P2007' Should Have Uniclass Classification Classification With Value 'SL_42_85_59'" description="Spaces with classification 'P2007' Should Have Uniclass Classification Classification With Value 'SL_42_85_59'" identifier="3_05_15_SL_42_85_59">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5337,7 +5337,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_50_35_08 : Spaces with classification 'P4021, P5043' Should Have Uniclass Classification Classification With Value 'SL_50_35_08'" description="Spaces with classification 'P4021, P5043' Should Have Uniclass Classification Classification With Value 'SL_50_35_08'" identifier="3_05_14_SL_50_35_08">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_50_35_08 : Spaces with classification 'P4021, P5043' Should Have Uniclass Classification Classification With Value 'SL_50_35_08'" description="Spaces with classification 'P4021, P5043' Should Have Uniclass Classification Classification With Value 'SL_50_35_08'" identifier="3_05_15_SL_50_35_08">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5371,7 +5371,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_50_40_72 : Spaces with classification 'P6011' Should Have Uniclass Classification Classification With Value 'SL_50_40_72'" description="Spaces with classification 'P6011' Should Have Uniclass Classification Classification With Value 'SL_50_40_72'" identifier="3_05_14_SL_50_40_72">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_50_40_72 : Spaces with classification 'P6011' Should Have Uniclass Classification Classification With Value 'SL_50_40_72'" description="Spaces with classification 'P6011' Should Have Uniclass Classification Classification With Value 'SL_50_40_72'" identifier="3_05_15_SL_50_40_72">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5404,7 +5404,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_75_10_21 : Spaces with classification 'S7105, S7106' Should Have Uniclass Classification Classification With Value 'SL_75_10_21'" description="Spaces with classification 'S7105, S7106' Should Have Uniclass Classification Classification With Value 'SL_75_10_21'" identifier="3_05_14_SL_75_10_21">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_75_10_21 : Spaces with classification 'S7105, S7106' Should Have Uniclass Classification Classification With Value 'SL_75_10_21'" description="Spaces with classification 'S7105, S7106' Should Have Uniclass Classification Classification With Value 'SL_75_10_21'" identifier="3_05_15_SL_75_10_21">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5438,7 +5438,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_10_94 : Spaces with classification 'P6006' Should Have Uniclass Classification Classification With Value 'SL_80_10_94'" description="Spaces with classification 'P6006' Should Have Uniclass Classification Classification With Value 'SL_80_10_94'" identifier="3_05_14_SL_80_10_94">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_10_94 : Spaces with classification 'P6006' Should Have Uniclass Classification Classification With Value 'SL_80_10_94'" description="Spaces with classification 'P6006' Should Have Uniclass Classification Classification With Value 'SL_80_10_94'" identifier="3_05_15_SL_80_10_94">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5471,7 +5471,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_35_20 : Spaces with classification 'P6004' Should Have Uniclass Classification Classification With Value 'SL_80_35_20'" description="Spaces with classification 'P6004' Should Have Uniclass Classification Classification With Value 'SL_80_35_20'" identifier="3_05_14_SL_80_35_20">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_35_20 : Spaces with classification 'P6004' Should Have Uniclass Classification Classification With Value 'SL_80_35_20'" description="Spaces with classification 'P6004' Should Have Uniclass Classification Classification With Value 'SL_80_35_20'" identifier="3_05_15_SL_80_35_20">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5504,7 +5504,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_35_63 : Spaces with classification 'P1005, P6002, P6003' Should Have Uniclass Classification Classification With Value 'SL_80_35_63'" description="Spaces with classification 'P1005, P6002, P6003' Should Have Uniclass Classification Classification With Value 'SL_80_35_63'" identifier="3_05_14_SL_80_35_63">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_35_63 : Spaces with classification 'P1005, P6002, P6003' Should Have Uniclass Classification Classification With Value 'SL_80_35_63'" description="Spaces with classification 'P1005, P6002, P6003' Should Have Uniclass Classification Classification With Value 'SL_80_35_63'" identifier="3_05_15_SL_80_35_63">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5539,7 +5539,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_35_74 : Spaces with classification 'P6005' Should Have Uniclass Classification Classification With Value 'SL_80_35_74'" description="Spaces with classification 'P6005' Should Have Uniclass Classification Classification With Value 'SL_80_35_74'" identifier="3_05_14_SL_80_35_74">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_35_74 : Spaces with classification 'P6005' Should Have Uniclass Classification Classification With Value 'SL_80_35_74'" description="Spaces with classification 'P6005' Should Have Uniclass Classification Classification With Value 'SL_80_35_74'" identifier="3_05_15_SL_80_35_74">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5572,7 +5572,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_45_01 : Spaces with classification 'P6008' Should Have Uniclass Classification Classification With Value 'SL_80_45_01'" description="Spaces with classification 'P6008' Should Have Uniclass Classification Classification With Value 'SL_80_45_01'" identifier="3_05_14_SL_80_45_01">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_45_01 : Spaces with classification 'P6008' Should Have Uniclass Classification Classification With Value 'SL_80_45_01'" description="Spaces with classification 'P6008' Should Have Uniclass Classification Classification With Value 'SL_80_45_01'" identifier="3_05_15_SL_80_45_01">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5605,7 +5605,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_45_15 : Spaces with classification 'P6009' Should Have Uniclass Classification Classification With Value 'SL_80_45_15'" description="Spaces with classification 'P6009' Should Have Uniclass Classification Classification With Value 'SL_80_45_15'" identifier="3_05_14_SL_80_45_15">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_45_15 : Spaces with classification 'P6009' Should Have Uniclass Classification Classification With Value 'SL_80_45_15'" description="Spaces with classification 'P6009' Should Have Uniclass Classification Classification With Value 'SL_80_45_15'" identifier="3_05_15_SL_80_45_15">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5638,7 +5638,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_80_45_59 : Spaces with classification 'P6007' Should Have Uniclass Classification Classification With Value 'SL_80_45_59'" description="Spaces with classification 'P6007' Should Have Uniclass Classification Classification With Value 'SL_80_45_59'" identifier="3_05_14_SL_80_45_59">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_80_45_59 : Spaces with classification 'P6007' Should Have Uniclass Classification Classification With Value 'SL_80_45_59'" description="Spaces with classification 'P6007' Should Have Uniclass Classification Classification With Value 'SL_80_45_59'" identifier="3_05_15_SL_80_45_59">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5671,7 +5671,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_10_15 : Spaces with classification 'S7002, S7005, S7010,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_15'" description="Spaces with classification 'S7002, S7005, S7010,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_15'" identifier="3_05_14_SL_90_10_15">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_10_15 : Spaces with classification 'S7002, S7005, S7010,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_15'" description="Spaces with classification 'S7002, S7005, S7010,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_15'" identifier="3_05_15_SL_90_10_15">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5722,7 +5722,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_10_47 : Spaces with classification 'S7044, S7045, S7046,+3 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_47'" description="Spaces with classification 'S7044, S7045, S7046,+3 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_47'" identifier="3_05_14_SL_90_10_47">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_10_47 : Spaces with classification 'S7044, S7045, S7046,+3 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_47'" description="Spaces with classification 'S7044, S7045, S7046,+3 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_47'" identifier="3_05_15_SL_90_10_47">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5760,7 +5760,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_10_51 : Spaces with classification 'S7003, S7007, S7056' Should Have Uniclass Classification Classification With Value 'SL_90_10_51'" description="Spaces with classification 'S7003, S7007, S7056' Should Have Uniclass Classification Classification With Value 'SL_90_10_51'" identifier="3_05_14_SL_90_10_51">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_10_51 : Spaces with classification 'S7003, S7007, S7056' Should Have Uniclass Classification Classification With Value 'SL_90_10_51'" description="Spaces with classification 'S7003, S7007, S7056' Should Have Uniclass Classification Classification With Value 'SL_90_10_51'" identifier="3_05_15_SL_90_10_51">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5795,7 +5795,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_10_87 : Spaces with classification 'S7037, S7038, S7039,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_87'" description="Spaces with classification 'S7037, S7038, S7039,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_87'" identifier="3_05_14_SL_90_10_87">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_10_87 : Spaces with classification 'S7037, S7038, S7039,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_87'" description="Spaces with classification 'S7037, S7038, S7039,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_10_87'" identifier="3_05_15_SL_90_10_87">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5834,7 +5834,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_20_13 : Spaces with classification 'S7063, S7078, S7079,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_13'" description="Spaces with classification 'S7063, S7078, S7079,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_13'" identifier="3_05_14_SL_90_20_13">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_20_13 : Spaces with classification 'S7063, S7078, S7079,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_13'" description="Spaces with classification 'S7063, S7078, S7079,+4 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_13'" identifier="3_05_15_SL_90_20_13">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5873,7 +5873,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_20_14 : Spaces with classification 'S6005, S6008, S6010,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_14'" description="Spaces with classification 'S6005, S6008, S6010,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_14'" identifier="3_05_14_SL_90_20_14">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_20_14 : Spaces with classification 'S6005, S6008, S6010,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_14'" description="Spaces with classification 'S6005, S6008, S6010,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_14'" identifier="3_05_15_SL_90_20_14">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5909,7 +5909,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_20_80 : Spaces with classification 'S2001, S2002, S2003,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_80'" description="Spaces with classification 'S2001, S2002, S2003,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_80'" identifier="3_05_14_SL_90_20_80">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_20_80 : Spaces with classification 'S2001, S2002, S2003,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_80'" description="Spaces with classification 'S2001, S2002, S2003,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_80'" identifier="3_05_15_SL_90_20_80">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5945,7 +5945,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_20_85 : Spaces with classification 'S4028, S4031, S4033,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_85'" description="Spaces with classification 'S4028, S4031, S4033,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_85'" identifier="3_05_14_SL_90_20_85">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_20_85 : Spaces with classification 'S4028, S4031, S4033,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_85'" description="Spaces with classification 'S4028, S4031, S4033,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_85'" identifier="3_05_15_SL_90_20_85">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -5981,7 +5981,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_20_86 : Spaces with classification 'S4016, S4017, S4037,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_86'" description="Spaces with classification 'S4016, S4017, S4037,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_86'" identifier="3_05_14_SL_90_20_86">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_20_86 : Spaces with classification 'S4016, S4017, S4037,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_86'" description="Spaces with classification 'S4016, S4017, S4037,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_20_86'" identifier="3_05_15_SL_90_20_86">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6022,7 +6022,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_10 : Spaces with classification 'S6064, S6065, S6066' Should Have Uniclass Classification Classification With Value 'SL_90_50_10'" description="Spaces with classification 'S6064, S6065, S6066' Should Have Uniclass Classification Classification With Value 'SL_90_50_10'" identifier="3_05_14_SL_90_50_10">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_10 : Spaces with classification 'S6064, S6065, S6066' Should Have Uniclass Classification Classification With Value 'SL_90_50_10'" description="Spaces with classification 'S6064, S6065, S6066' Should Have Uniclass Classification Classification With Value 'SL_90_50_10'" identifier="3_05_15_SL_90_50_10">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6057,7 +6057,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_13 : Spaces with classification 'S6018, S6021' Should Have Uniclass Classification Classification With Value 'SL_90_50_13'" description="Spaces with classification 'S6018, S6021' Should Have Uniclass Classification Classification With Value 'SL_90_50_13'" identifier="3_05_14_SL_90_50_13">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_13 : Spaces with classification 'S6018, S6021' Should Have Uniclass Classification Classification With Value 'SL_90_50_13'" description="Spaces with classification 'S6018, S6021' Should Have Uniclass Classification Classification With Value 'SL_90_50_13'" identifier="3_05_15_SL_90_50_13">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6091,7 +6091,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_16 : Spaces with classification 'S6063' Should Have Uniclass Classification Classification With Value 'SL_90_50_16'" description="Spaces with classification 'S6063' Should Have Uniclass Classification Classification With Value 'SL_90_50_16'" identifier="3_05_14_SL_90_50_16">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_16 : Spaces with classification 'S6063' Should Have Uniclass Classification Classification With Value 'SL_90_50_16'" description="Spaces with classification 'S6063' Should Have Uniclass Classification Classification With Value 'SL_90_50_16'" identifier="3_05_15_SL_90_50_16">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6124,7 +6124,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_22 : Spaces with classification 'S6044' Should Have Uniclass Classification Classification With Value 'SL_90_50_22'" description="Spaces with classification 'S6044' Should Have Uniclass Classification Classification With Value 'SL_90_50_22'" identifier="3_05_14_SL_90_50_22">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_22 : Spaces with classification 'S6044' Should Have Uniclass Classification Classification With Value 'SL_90_50_22'" description="Spaces with classification 'S6044' Should Have Uniclass Classification Classification With Value 'SL_90_50_22'" identifier="3_05_15_SL_90_50_22">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6157,7 +6157,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_35 : Spaces with classification 'S6001, S6002, S6003,+5 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_35'" description="Spaces with classification 'S6001, S6002, S6003,+5 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_35'" identifier="3_05_14_SL_90_50_35">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_35 : Spaces with classification 'S6001, S6002, S6003,+5 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_35'" description="Spaces with classification 'S6001, S6002, S6003,+5 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_35'" identifier="3_05_15_SL_90_50_35">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6197,7 +6197,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_73 : Spaces with classification 'S6038, S6040, S6041' Should Have Uniclass Classification Classification With Value 'SL_90_50_73'" description="Spaces with classification 'S6038, S6040, S6041' Should Have Uniclass Classification Classification With Value 'SL_90_50_73'" identifier="3_05_14_SL_90_50_73">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_73 : Spaces with classification 'S6038, S6040, S6041' Should Have Uniclass Classification Classification With Value 'SL_90_50_73'" description="Spaces with classification 'S6038, S6040, S6041' Should Have Uniclass Classification Classification With Value 'SL_90_50_73'" identifier="3_05_15_SL_90_50_73">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6232,7 +6232,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_77 : Spaces with classification 'S6060' Should Have Uniclass Classification Classification With Value 'SL_90_50_77'" description="Spaces with classification 'S6060' Should Have Uniclass Classification Classification With Value 'SL_90_50_77'" identifier="3_05_14_SL_90_50_77">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_77 : Spaces with classification 'S6060' Should Have Uniclass Classification Classification With Value 'SL_90_50_77'" description="Spaces with classification 'S6060' Should Have Uniclass Classification Classification With Value 'SL_90_50_77'" identifier="3_05_15_SL_90_50_77">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6265,7 +6265,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_82 : Spaces with classification 'S6024, S6025, S6026,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_82'" description="Spaces with classification 'S6024, S6025, S6026,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_82'" identifier="3_05_14_SL_90_50_82">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_82 : Spaces with classification 'S6024, S6025, S6026,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_82'" description="Spaces with classification 'S6024, S6025, S6026,+16 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_82'" identifier="3_05_15_SL_90_50_82">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6316,7 +6316,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_84 : Spaces with classification 'P1011, P4016, P6010' Should Have Uniclass Classification Classification With Value 'SL_90_50_84'" description="Spaces with classification 'P1011, P4016, P6010' Should Have Uniclass Classification Classification With Value 'SL_90_50_84'" identifier="3_05_14_SL_90_50_84">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_84 : Spaces with classification 'P1011, P4016, P6010' Should Have Uniclass Classification Classification With Value 'SL_90_50_84'" description="Spaces with classification 'P1011, P4016, P6010' Should Have Uniclass Classification Classification With Value 'SL_90_50_84'" identifier="3_05_15_SL_90_50_84">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6351,7 +6351,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_50_87 : Spaces with classification 'S6004, S6006, S6007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_87'" description="Spaces with classification 'S6004, S6006, S6007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_87'" identifier="3_05_14_SL_90_50_87">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_50_87 : Spaces with classification 'S6004, S6006, S6007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_87'" description="Spaces with classification 'S6004, S6006, S6007,+13 more' Should Have Uniclass Classification Classification With Value 'SL_90_50_87'" identifier="3_05_15_SL_90_50_87">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6399,7 +6399,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_90_63 : Spaces with classification 'P6012' Should Have Uniclass Classification Classification With Value 'SL_90_90_63'" description="Spaces with classification 'P6012' Should Have Uniclass Classification Classification With Value 'SL_90_90_63'" identifier="3_05_14_SL_90_90_63">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_90_63 : Spaces with classification 'P6012' Should Have Uniclass Classification Classification With Value 'SL_90_90_63'" description="Spaces with classification 'P6012' Should Have Uniclass Classification Classification With Value 'SL_90_90_63'" identifier="3_05_15_SL_90_90_63">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6432,7 +6432,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_90_64 : Spaces with classification 'S7021, S7025, S7092,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_64'" description="Spaces with classification 'S7021, S7025, S7092,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_64'" identifier="3_05_14_SL_90_90_64">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_90_64 : Spaces with classification 'S7021, S7025, S7092,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_64'" description="Spaces with classification 'S7021, S7025, S7092,+6 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_64'" identifier="3_05_15_SL_90_90_64">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6473,7 +6473,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_90_77 : Spaces with classification 'S7101, S7102, S7103,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_77'" description="Spaces with classification 'S7101, S7102, S7103,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_77'" identifier="3_05_14_SL_90_90_77">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_90_77 : Spaces with classification 'S7101, S7102, S7103,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_77'" description="Spaces with classification 'S7101, S7102, S7103,+1 more' Should Have Uniclass Classification Classification With Value 'SL_90_90_77'" identifier="3_05_15_SL_90_90_77">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6509,7 +6509,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_14_SL_90_90_78 : Spaces with classification 'S7098, S7099, S7100' Should Have Uniclass Classification Classification With Value 'SL_90_90_78'" description="Spaces with classification 'S7098, S7099, S7100' Should Have Uniclass Classification Classification With Value 'SL_90_90_78'" identifier="3_05_14_SL_90_90_78">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_15_SL_90_90_78 : Spaces with classification 'S7098, S7099, S7100' Should Have Uniclass Classification Classification With Value 'SL_90_90_78'" description="Spaces with classification 'S7098, S7099, S7100' Should Have Uniclass Classification Classification With Value 'SL_90_90_78'" identifier="3_05_15_SL_90_90_78">
 			<ids:applicability minOccurs="0" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -6544,7 +6544,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="3_05_15 : Space Shall Be Allocated To A Zone" description="Space Shall Be Allocated To A Zone" identifier="3_05_15">
+		<ids:specification ifcVersion="IFC2X3" name="3_05_16 : Space Shall Be Allocated To A Zone" description="Space Shall Be Allocated To A Zone" identifier="3_05_16">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>

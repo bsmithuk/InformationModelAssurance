@@ -6,7 +6,7 @@
 		<ids:version>P01</ids:version>
 		<ids:description>Assurance of IFC-SPF deliverables against DfE's S25 Information Requirements - Core Only</ids:description>
 		<ids:author>DfE.BIM@Education.gov.uk</ids:author>
-		<ids:date>2026-05-20</ids:date>
+		<ids:date>2026-05-21</ids:date>
 		<ids:purpose>Information Model Assurance</ids:purpose>
 		<ids:milestone>RIBA Stage 5 : Construction and Manufacturing</ids:milestone>
 	</ids:info>
@@ -1657,32 +1657,6 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_05_11 : Space Shall Have GrossFloorArea Defined" description="Space Shall Have GrossFloorArea Defined" identifier="5_05_11">
-			<ids:applicability minOccurs="1" maxOccurs="unbounded">
-				<ids:entity>
-					<ids:name>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="IFCSPACE" />
-						</xs:restriction>
-					</ids:name>
-				</ids:entity>
-			</ids:applicability>
-			<ids:requirements>
-				<ids:property cardinality="required" dataType="IFCAREAMEASURE">
-					<ids:propertySet>
-						<ids:simpleValue>BaseQuantities</ids:simpleValue>
-					</ids:propertySet>
-					<ids:baseName>
-						<ids:simpleValue>GrossFloorArea</ids:simpleValue>
-					</ids:baseName>
-					<ids:value>
-						<xs:restriction base="xs:double">
-							<xs:minExclusive value="0" />
-						</xs:restriction>
-					</ids:value>
-				</ids:property>
-			</ids:requirements>
-		</ids:specification>
 		<ids:specification ifcVersion="IFC2X3" name="5_05_11_01 : Space Shall Have ClearHeight Defined In BaseQuantities" description="Space Shall Have ClearHeight Defined In BaseQuantities" identifier="5_05_11_01">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
@@ -1709,7 +1683,33 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_05_12 : Space Shall Have NetFloorArea Defined" description="Space Shall Have NetFloorArea Defined" identifier="5_05_12">
+		<ids:specification ifcVersion="IFC2X3" name="5_05_12 : Space Shall Have GrossFloorArea Defined" description="Space Shall Have GrossFloorArea Defined" identifier="5_05_12">
+			<ids:applicability minOccurs="1" maxOccurs="unbounded">
+				<ids:entity>
+					<ids:name>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="IFCSPACE" />
+						</xs:restriction>
+					</ids:name>
+				</ids:entity>
+			</ids:applicability>
+			<ids:requirements>
+				<ids:property cardinality="required" dataType="IFCAREAMEASURE">
+					<ids:propertySet>
+						<ids:simpleValue>BaseQuantities</ids:simpleValue>
+					</ids:propertySet>
+					<ids:baseName>
+						<ids:simpleValue>GrossFloorArea</ids:simpleValue>
+					</ids:baseName>
+					<ids:value>
+						<xs:restriction base="xs:double">
+							<xs:minExclusive value="0" />
+						</xs:restriction>
+					</ids:value>
+				</ids:property>
+			</ids:requirements>
+		</ids:specification>
+		<ids:specification ifcVersion="IFC2X3" name="5_05_13 : Space Shall Have NetFloorArea Defined" description="Space Shall Have NetFloorArea Defined" identifier="5_05_13">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -1735,7 +1735,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_05_13 : Space Shall Have Uniclass Classification Defined" description="Space Shall Have Uniclass Classification Defined" identifier="5_05_13">
+		<ids:specification ifcVersion="IFC2X3" name="5_05_14 : Space Shall Have Uniclass Classification Defined" description="Space Shall Have Uniclass Classification Defined" identifier="5_05_14">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -1882,7 +1882,7 @@
 				</ids:classification>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_05_15 : Space Shall Be Allocated To A Zone" description="Space Shall Be Allocated To A Zone" identifier="5_05_15">
+		<ids:specification ifcVersion="IFC2X3" name="5_05_16 : Space Shall Be Allocated To A Zone" description="Space Shall Be Allocated To A Zone" identifier="5_05_16">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2658,7 +2658,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_08 : Object Occurrence Shall Have SerialNumber That Is Defined" description="Object Occurrence Shall Have SerialNumber That Is Defined" identifier="5_08_08">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_05 : Object Occurrence Shall Have SerialNumber That Is Defined" description="Object Occurrence Shall Have SerialNumber That Is Defined" identifier="5_08_05">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2700,7 +2700,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_11 : Object Occurrence Shall Have InstallationDate That Is Defined" description="Object Occurrence Shall Have InstallationDate That Is Defined" identifier="5_08_11">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_07 : Object Occurrence Shall Have InstallationDate That Is Defined" description="Object Occurrence Shall Have InstallationDate That Is Defined" identifier="5_08_07">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2742,7 +2742,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_14 : Object Occurrence Shall Have WarrantyStartDate That Is Defined" description="Object Occurrence Shall Have WarrantyStartDate That Is Defined" identifier="5_08_14">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_09 : Object Occurrence Shall Have WarrantyStartDate That Is Defined" description="Object Occurrence Shall Have WarrantyStartDate That Is Defined" identifier="5_08_09">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2784,7 +2784,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_17 : Object Occurrence Shall Have TagNumber That Is Defined" description="Object Occurrence Shall Have TagNumber That Is Defined" identifier="5_08_17">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_11 : Object Occurrence Shall Have TagNumber That Is Defined" description="Object Occurrence Shall Have TagNumber That Is Defined" identifier="5_08_11">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2826,7 +2826,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_19 : Object Occurrence Shall Have BarCode That Is Defined" description="Object Occurrence Shall Have BarCode That Is Defined" identifier="5_08_19">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_13 : Object Occurrence Shall Have BarCode That Is Defined" description="Object Occurrence Shall Have BarCode That Is Defined" identifier="5_08_13">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2868,7 +2868,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_22 : Object Occurrence Shall Have AssetIdentifier That Is Defined" description="Object Occurrence Shall Have AssetIdentifier That Is Defined" identifier="5_08_22">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_15 : Object Occurrence Shall Have AssetIdentifier That Is Defined" description="Object Occurrence Shall Have AssetIdentifier That Is Defined" identifier="5_08_15">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2910,7 +2910,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_24 : Object Occurrence (Door) Shall Have FireRating That Is Defined" description="Object Occurrence (Door) Shall Have FireRating That Is Defined" identifier="5_08_24">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_17 : Object Occurrence (Door) Shall Have FireRating That Is Defined" description="Object Occurrence (Door) Shall Have FireRating That Is Defined" identifier="5_08_17">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
@@ -2936,7 +2936,7 @@
 				</ids:property>
 			</ids:requirements>
 		</ids:specification>
-		<ids:specification ifcVersion="IFC2X3" name="5_08_25 : Object Occurrence (Door) Shall Have FireRating That Is From PickList Provided In The Projects Information Standard" description="Object Occurrence (Door) Shall Have FireRating That Is From PickList Provided In The Projects Information Standard" identifier="5_08_25">
+		<ids:specification ifcVersion="IFC2X3" name="5_08_18 : Object Occurrence (Door) Shall Have FireRating That Is From PickList Provided In The Projects Information Standard" description="Object Occurrence (Door) Shall Have FireRating That Is From PickList Provided In The Projects Information Standard" identifier="5_08_18">
 			<ids:applicability minOccurs="1" maxOccurs="unbounded">
 				<ids:entity>
 					<ids:name>
